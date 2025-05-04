@@ -1,0 +1,425 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Glorida";
+  src: url("./font/glorida.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Goodtimes";
+  src: url("./font/goodtimes.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: linear-gradient(to bottom, #480E66, #000000);
+  color: #ffffff;
+  font-family: "Glorida";
+  margin: 0;
+  padding: 0;
+}
+body button {
+  background: linear-gradient(90deg, #f29807, #480e66);
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-family: "Goodtimes";
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body button:hover {
+  box-shadow: 0 0 10px #f29807;
+  transform: scale(1.03);
+}
+body nav {
+  background: linear-gradient(to bottom, #480E66, #000000);
+  padding: 1rem 2rem;
+}
+body nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+body nav a:hover {
+  color: #f29807;
+}
+body nav .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+body nav .logo span {
+  color: #f29807;
+}
+body .hero {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+body .hero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+body .hero .hero-text {
+  flex: 1;
+}
+body .hero .hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
+}
+body .hero .hero-text h1 span {
+  color: #f29807;
+}
+body .password-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+body .password-video video {
+  width: 100%;
+  max-width: 700px;
+}
+
+.info-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.info-section h2 {
+  font-size: 2rem;
+}
+.info-section h2 span {
+  color: #f29807;
+}
+.info-section p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info-section .threat-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.info-section .threat-cards .card {
+  background: #1a1033;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+}
+.info-section .threat-cards .card h3 {
+  color: #f29807;
+}
+.info-section .threat-cards .card p {
+  color: #ccc;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #120326;
+}
+.cta-section h2 {
+  font-size: 2rem;
+}
+.cta-section h2 span {
+  color: #f29807;
+}
+.cta-section p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5rem 10rem 5rem;
+  color: #bbb;
+}
+
+footer {
+  background: #140b24;
+  color: #aaa;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+footer .footer-container .footer-col {
+  flex: 1 1 200px;
+  margin: 1rem;
+}
+footer .footer-container .footer-col h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+footer .footer-container .footer-col ul {
+  list-style: none;
+  padding: 2rem;
+}
+footer .footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  background: #0c011a;
+  font-size: 0.85rem;
+}
+
+.info-section {
+  padding: 200px;
+}
+.info-section h1 {
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
+}
+.info-section h1 span {
+  color: #f29807;
+}
+.info-section h1 p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.threat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  align-items: start;
+  padding: 40px 100px;
+}
+.threat .threat-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.threat .threat-text h2 {
+  display: flex;
+  justify-content: center;
+  color: #f29807;
+  font-size: 3rem;
+}
+.threat .threat-text span {
+  color: #f29807;
+  font-weight: bold;
+}
+.threat .threat-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.threat .threat-media video {
+  width: 100%;
+  max-width: 0.5fr;
+}
+.threat .threat-media img {
+  width: 100%;
+  max-width: 0.5fr;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.cta .btn-test {
+  background: linear-gradient(90deg, #f29807, #480e66);
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-family: "Goodtimes";
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.cta .btn-test:hover {
+  box-shadow: 0 0 10px #f29807;
+  transform: scale(1.03);
+}
+
+.test1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.test1 p {
+  padding: 0 300px 30px;
+}
+
+@media (max-width: 768px) {
+  nav .nav-container {
+    flex-direction: column; /* Ændrer layoutet til en kolonne på mobil */
+    align-items: flex-start; /* Justerer elementerne til venstre */
+    padding: 1rem; /* Mindre padding */
+  }
+  nav .nav-left, nav .nav-right {
+    display: none; /* Skjul venstre og højre links på mobil */
+  }
+  nav .nav-center {
+    width: 100%; /* Center logoet */
+    text-align: center;
+  }
+  nav .logo {
+    font-size: 1.5rem; /* Reducer logo-størrelsen på mobil */
+  }
+  nav .hamburger {
+    z-index: 1100;
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    background: #1a1033;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    padding: 1rem;
+    border-left: 2px solid #f29807;
+    border-radius: 0 0 0 10px;
+  }
+  nav .menu a {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+  nav .menu.show {
+    display: flex;
+    max-height: 500px;
+    opacity: 1;
+  }
+  .cta-section {
+    flex-direction: column; /* Skift layout til kolonne på mobil */
+    text-align: center; /* Centrer tekstindholdet */
+    gap: 2rem; /* Læg lidt afstand mellem billedet og teksten */
+  }
+  .cta-section .cta-image {
+    max-width: 100%; /* Billedet skal fylde hele bredden på mobil */
+    flex: 0 0 100%; /* Gør billedet til 100% bredde */
+  }
+  .cta-section .cta-text {
+    width: 100%; /* Giver tekstindholdet 100% bredde på mobil */
+  }
+  .cta-section p {
+    margin: 1rem; /* Juster margin på mobil */
+  }
+  .cta-section button {
+    width: 100%; /* Knappen skal fylde hele bredden på mobil */
+    padding: 1rem; /* Juster knap-padding for mobil */
+  }
+  .learning-page, .info-section, .threat-text {
+    flex-direction: column; /* Ændrer layoutet til en kolonne på mobil */
+    align-items: flex-start; /* Justerer elementerne til venstre */
+    padding: 1rem; /* Mindre padding */
+  }
+  .learning-page .threat-media, .info-section .threat-media, .threat-text .threat-media {
+    display: none;
+  }
+  .nav-center {
+    display: none;
+  }
+  .menu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+  }
+  .test1 p {
+    padding: 0;
+  }
+}
+#scenario {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+#scenario p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+#scenario em {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+#scenario h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+#scenario h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+#scenario ul {
+  list-style: none;
+  padding: 0;
+}
+#scenario ul li {
+  background-color: #e9ecef;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+#scenario ul li strong {
+  display: block;
+  margin-top: 6px;
+  color: #007bff;
+}
+#scenario button {
+  display: inline-block;
+  margin: 10px 5px 0 0;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+#scenario button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* Skjul hamburger-menuen på større skærme */
+  }
+  .menu {
+    display: none; /* SKJUL menuen på større skærme */
+  }
+  .nav-left,
+  .nav-right {
+    display: flex; /* VIS venstre og højre links på større skærme */
+  }
+  .menu2 {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

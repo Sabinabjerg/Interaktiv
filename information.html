@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lær om cybersikkerhed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="#">Lær om cybersikkerhed</a>
+          </div>
+          <div class="nav-center">
+            <a href="index.html" class="logo"><span>Cyber</span>Klar</a>
+          </div>
+          <div class="nav-right">
+            <a href="Test.html">Tag en test</a>
+          </div>
+    
+          <!-- Hamburger-menu -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          </div>
+    
+          <!-- Skjult menu -->
+          <div class="menu">
+            <a href="index.html">Forside</a>
+            <a href="Test.html">Tag en test</a>
+          </div>
+    
+        </div> 
+      </nav>
+      <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+              <a href="#phishing">Phishing</a>
+            </div>
+            <div class="nav-center">
+              <a href="#malware">Malware & Ransomware</a>
+            </div>
+            <div class="nav-right">
+              <a href="#software">Software</a>
+            </div>
+        </div>
+
+        <div class="menu2">
+            <a href="#phishing">Phishing</a>
+            <a href="#malware">Malware & Ransomware</a>
+            <a href="#software">Software</a>
+          </div>
+      </nav>
+
+      <section class="learning-page">
+        <div class="info-section">
+            <h1>Hvorfor <span>cyberangreb</span> kan være <br> <span>katastrofalt</span> for din <span>virksomhed</span></h1>
+            <p class="intro">Forestil dig, at din virksomhed er som en borg. Men i stedet for riddere og mure, er det jeres computere og systemer, der skal holde fjenderne ude. Uheldigvis sniger pirater sig ikke længere gennem hemmelige tunneler – i stedet for sender de falske e-mails, som kan gøre stor skade.
+            Phishing, malware og ransomware lyder måske som noget fra en science fiction-film, men de er helt virkelige trusler.</p>
+        </div>
+
+      <div class="threat-boxes">
+        <div class="threat">
+          <div class="threat-media">
+            <img src="img/phishing.jpg" alt="Eksempel på en spam mail">
+          </div>
+          <div id="phishing" class="threat-text">
+            <h2>Phishing</h2>
+            <p>Phishing er som en digital fisketur – men her er det ikke fisk, der bliver fanget. Det er dine oplysninger, de er ude efter. Svindlerne sender mails, der ligner noget fra banken, en kollega eller en vigtig samarbejdspartner. De prøver at lokke dig til at klikke på links eller dele følsomme oplysninger. Et enkelt uopmærksomt klik kan åbne døren for alt fra stjålne adgangskoder til store økonomiske tab. Heldigvis kan man lære at kende forskel på ægte beskeder og de falske maddinger – og vi viser dig hvordan.</p>
+            <ul>
+                <li><span>Tjek afsenderen:</span><br>Ser e-mailadressen rigtig ud, eller skjuler der sig noget mistænkeligt?</li>
+                <li><span>Hold øje med sproget:</span><br>Mange phishing-mails har stavefejl, mærkelige formuleringer eller haster unødvendigt.</li>
+                <li><span>Pas på links:</span><br>Hold musen over links uden at klikke – leder de virkelig hen, hvor de påstår?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="threat reverse">
+
+            <div id="malware" class="threat-text">
+              <h2>Malware & Ransomware</h2>
+              <p>Forestil dig, at nogen lister ind på din computer uden invitation. Det er præcis, hvad malware gør. Malware er skadelig software, der kan stjæle data, ødelægge systemer eller bare skabe kaos – alt sammen uden du nødvendigvis opdager det. En særlig slem type malware er ransomware. Her bliver dine filer taget som gidsler, og du bliver præsenteret for en besked: Betal løsepenge, eller sig farvel til dine data. Ransomware spreder sig ofte gennem falske e-mails eller smittede programmer, og konsekvenserne kan være dyre, hvis man ikke er godt forberedt. Heldigvis kan gode sikkerhedsvaner og friske backups gøre en kæmpe forskel!</p>
+              <ul>
+                <li><span>Brug antivirus og firewall:</span><br>Gode sikkerhedsværktøjer fanger mange trusler...</li>
+                <li><span>Tag backup jævnligt:</span><br>Gem kopier af vigtige filer...</li>
+              </ul>
+            </div>            
+            <div class="threat-media">
+              <video autoplay muted loop playsinline>
+                <source src="img/Malware.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="threat">
+            <div class="threat-media">
+                <img src="img/update.jpg" alt="update">
+            </div>
+            <div id="software" class="threat-text">
+                <h2>Software- <br>opdatering</h2>
+                <p>Det kan være fristende at trykke “mind mig senere”, når computeren beder om en opdatering – men de der små popups er faktisk dine digitale bodyguards. Softwareopdateringer lukker sikkerhedshuller, retter fejl og beskytter dig mod de nyeste trusler. Cyberkriminelle elsker forældet software, for det gør deres arbejde lettere. Jo længere du venter, desto større er risikoen for, at uvedkommende finder vej ind i dine systemer. En opdatering i dag kan spare dig for store problemer i morgen.</p>
+                <ul>
+                    <li><span>Lukker sikkerhedshuller:</span><br>Hackere udnytter kendte fejl – opdateringer lukker dem.</li>
+                    <li><span>Forbedre ydeevnen:</span><br>Din software bliver ofte både hurtigere og mere stabil.</li>
+                    <li><span>Beskyt dine data:</span><br>Opdateringer gør det sværere for uvedkommende at få adgang.</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+        <div class="cta">
+          <h2>Klar til testen?</h2>
+          <p>Afslut med en hurtig test og se, hvor cyberklar du er.</p>
+          <a href="test.html" class="btn-test">Start testen</a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-col">
+            <h4>CyberKlar</h4>
+            <p>Vi gør cybersikkerhed forståelig og tilgængelig.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Juridisk</h4>
+            <ul>
+              <li><a href="#">Privatlivspolitik</a></li>
+              <li><a href="#">Cookiepolitik</a></li>
+              <li><a href="#">Vilkår & betingelser</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#">Om os</a></li>
+              <li><a href="#">Læringsforløb</a></li>
+              <li><a href="#">Tag testen</a></li>
+              <li><a href="#">Hjælp & support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Kontakt</h4>
+            <p>E-mail: info@cyberklar.dk<br />Telefon: +45 12 23 34 45<br />CVR: 12345678</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2025 CyberKlar. Alle rettigheder forbeholdes.
+        </div>
+      </footer>
+
+      <script src="https://kit.fontawesome.com/811841b70e.js" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -88,7 +88,7 @@ nav {
     gap: 15rem;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; // for bedre mobilvisning
+    flex-wrap: wrap; 
   }
 
   .hero-text {
@@ -197,20 +197,7 @@ footer {
   }
 }
 
-.info-section {
-  padding: 200px;
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 3.5rem;
 
-    span {
-      color: $primary;
-    }
-    p {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  }
-}
 .threat {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -256,24 +243,6 @@ footer {
   align-items: center;
   flex-direction: column;
   padding: 50px;
-
-.btn-test {
-  background: $gradient;
-  color: $text;
-  text-decoration: none;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-family: 'Goodtimes';
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 0 10px $primary;
-    transform: scale(1.03);
-  }
-}
 }
 
 .test1 {
@@ -286,32 +255,32 @@ footer {
     padding: 0 300px 30px;
   }
 }
-// Responsiv Navigation
+
 @media (max-width: 768px) {
   nav {
     .nav-container {
-      flex-direction: column; /* Ændrer layoutet til en kolonne på mobil */
-      align-items: flex-start; /* Justerer elementerne til venstre */
-      padding: 1rem; /* Mindre padding */
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 1rem; 
     }
 
     .nav-left, .nav-right {
-      display: none; /* Skjul venstre og højre links på mobil */
+      display: none; 
     }
 
     .nav-center {
-      width: 100%; /* Center logoet */
+      width: 100%; 
       text-align: center;
     }
 
     .logo {
-      font-size: 1.5rem; /* Reducer logo-størrelsen på mobil */
+      font-size: 1.5rem; 
     }
 
-    // Hamburger-menu
+    /* Hamburger-menu */
     .hamburger {
-      z-index: 1100; // højere end menuens 1000
-      position: relative; // skal være positioneret for at z-index virker
+      z-index: 1100; 
+      position: relative;
       display: block;
       font-size: 2rem;
       cursor: pointer;
@@ -324,7 +293,7 @@ footer {
       width: 40%;
       background: #1a1033;
       position: fixed;
-      top: 80px; // juster efter din navbar-højde
+      top: 80px; 
       right: 0;
       padding: 1rem;
       border-left: 2px solid $primary;
@@ -345,33 +314,32 @@ footer {
     }
   }
   .cta-section {
-    flex-direction: column; /* Skift layout til kolonne på mobil */
-    text-align: center; /* Centrer tekstindholdet */
-    gap: 2rem; /* Læg lidt afstand mellem billedet og teksten */
+    flex-direction: column; 
+    text-align: center; 
+    gap: 2rem; 
 
     .cta-image {
-      max-width: 100%; /* Billedet skal fylde hele bredden på mobil */
-      flex: 0 0 100%; /* Gør billedet til 100% bredde */
+      max-width: 100%; 
+      flex: 0 0 100%; 
     }
 
     .cta-text {
-      width: 100%; /* Giver tekstindholdet 100% bredde på mobil */
+      width: 100%; 
     }
 
     p {
-      margin: 1rem; /* Juster margin på mobil */
+      margin: 1rem; 
     }
 
     button {
-      width: 100%; /* Knappen skal fylde hele bredden på mobil */
-      padding: 1rem; /* Juster knap-padding for mobil */
+      width: 100%; 
+      padding: 1rem; 
     }
   }
   .learning-page, .info-section, .threat-text {
-    flex-direction: column; /* Ændrer layoutet til en kolonne på mobil */
-    align-items: flex-start; /* Justerer elementerne til venstre */
-    padding: 1rem; /* Mindre padding */
-
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 1rem; 
     .threat-media {
       display: none;
     }
@@ -470,26 +438,24 @@ footer {
 
 
 
-// Skjul hamburger-menuen på desktop (større end 768px)
 @media (min-width: 769px) {
   .hamburger {
-    display: none; /* Skjul hamburger-menuen på større skærme */
+    display: none; 
   }
 
   .menu {
-    display: none; /* SKJUL menuen på større skærme */
+    display: none; 
   }
 
   .nav-left,
   .nav-right {
-    display: flex; /* VIS venstre og højre links på større skærme */
+    display: flex; 
   }
 
   .menu2 {
     display: none;
   }
 }
-
 
 
 
